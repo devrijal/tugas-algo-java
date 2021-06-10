@@ -9,12 +9,14 @@ public class Selection {
 
             int min_i = i;
 
+            // find the minimum element index
             for (int j = i+1; j < n; j++) {
                 if (random[j] < random[min_i]) {
                     min_i = j;
                 }
             }
 
+            // Swap minimum element with current element
             int temp = random[min_i];
             random[min_i] = random[i];
             random[i] = temp;
